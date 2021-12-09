@@ -104,15 +104,17 @@ modded class IngameHud
 		
 		if ( !shouldShow )	return;
 		
-		int currentHealth = player.GetTransferValues().GetHealth() * 100;		// Max is 100
-		int currentBlood  = player.GetTransferValues().GetBlood()  * 5000;		// Max is 5000
-		int currentHunger = player.GetTransferValues().GetHunger() * 7500;		// Max is 7500
-		int currentThirst = player.GetTransferValues().GetThirst() * 5000;		// Max is 5000
+		int currentHealth = player.GetTransferValues().GetHealth() * 1000;		// Max is 100
+		int currentBlood  = player.GetTransferValues().GetBlood()  * 1000;		// Max is 5000
+		int currentHunger = player.GetTransferValues().GetHunger() * 1000;		// Max is 7500
+		int currentThirst = player.GetTransferValues().GetThirst() * 1000;		// Max is 5000
 		
 		HealthBar.SetCurrent( currentHealth );
 		BloodBar.SetCurrent( currentBlood );
 		HungerBar.SetCurrent( currentHunger );
 		ThirstBar.SetCurrent( currentThirst );
+		
+		/* Setting Colors Based on vanilla stat levels
 		
 		HealthBar.SetColor( m_Notifiers.FindAnyWidget( "IconHealth" ).GetColor() );
 		BloodBar.SetColor( m_Notifiers.FindAnyWidget( "IconBlood" ).GetColor() );
@@ -123,6 +125,10 @@ modded class IngameHud
 		BloodText.SetColor( BloodBar.GetColor() );
 		HungerText.SetColor( HungerBar.GetColor() );
 		ThirstText.SetColor( ThirstBar.GetColor() );
+		
+		*/
+		
+		/* Setting Texts Based on vanilla stat levels
 		
 		EStatLevels statlevel;
 		
@@ -153,6 +159,144 @@ modded class IngameHud
 		if ( statlevel == EStatLevels.MEDIUM )		ThirstText.SetText( "Dehydrated" );
 		if ( statlevel == EStatLevels.LOW )			ThirstText.SetText( "Very Dehydrated" );
 		if ( statlevel == EStatLevels.CRITICAL )	ThirstText.SetText( "Dying Of Dehydration" );
+		*/
+		
+		// Colorz ( use this if you want get colors https://hugabor.github.io/color-picker/ )
+		// Parameters:		ARGB( 255, red, grn, blu )
+		int stat_white =	ARGB( 255, 220, 220, 220 );
+		int stat_yellow =	ARGB( 255, 255, 255, 000 );
+		int stat_orange =	ARGB( 255, 255, 150, 000 );
+		int stat_red =		ARGB( 255, 255, 000, 000 );
+		
+		string text, color;
+		
+		// Health
+		if ( percentageHealth => 0.8 ) // 80% and higher
+		{
+			text = "Very Healthy";
+			color = stat_white;
+		}
+		else if ( percentageHealth => 0.6 ) // 60% to 79.999%
+		{
+			text = "Healthy";
+			color = stat_white;
+		}
+		else if ( percentageHealth => 0.4 ) // 40% to 59.999%
+		{
+			text = "Somewhat Healthy";
+			color = stat_yellow;
+		}
+		else if ( percentageHealth => 0.2 ) // 20% to 39.999%
+		{
+			text = "Unhealthy";
+			color = stat_orange;
+		}
+		else if ( percentageHealth => 0.0 ) // 0% to 19.999%
+		{
+			text = "Very Unhealthy";
+			color = stat_red;
+		}
+		
+		m_Notifiers.FindAnyWidget( "IconHealth" ).SetColor( color ); // Set vanilla icon color
+		HealthText.SetText( text ); // Set StatBar Text
+		HealthText.SetColor( color ); // Set StatBar Text Color
+		HealthBar.SetColor( color ); // Set StatBar Color
+		
+		// Blood
+		if ( percentageHealth => 0.8 ) // 80% and higher
+		{
+			text = "Full Blood";
+			color = stat_white;
+		}
+		else if ( percentageHealth => 0.6 ) // 60% to 79.999%
+		{
+			text = "High Blood";
+			color = stat_white;
+		}
+		else if ( percentageHealth => 0.4 ) // 40% to 59.999%
+		{
+			text = "Lost Blood";
+			color = stat_yellow;
+		}
+		else if ( percentageHealth => 0.2 ) // 20% to 39.999%
+		{
+			text = "Low Blood";
+			color = stat_orange;
+		}
+		else if ( percentageHealth => 0.0 ) // 0% to 19.999%
+		{
+			text = "Very Low Blood";
+			color = stat_red;
+		}
+		
+		m_Notifiers.FindAnyWidget( "IconBlood" ).SetColor( color ); // Set vanilla icon color
+		BloodText.SetText( text ); // Set StatBar Text
+		BloodText.SetColor( color ); // Set StatBar Text Color
+		BloodBar.SetColor( color ); // Set StatBar Color
+		
+		// Hunger
+		if ( percentageHealth => 0.8 ) // 80% and higher
+		{
+			text = "Very Well Fed";
+			color = stat_white;
+		}
+		else if ( percentageHealth => 0.6 ) // 60% to 79.999%
+		{
+			text = "Well Fed";
+			color = stat_white;
+		}
+		else if ( percentageHealth => 0.4 ) // 40% to 59.999%
+		{
+			text = "Hungry";
+			color = stat_yellow;
+		}
+		else if ( percentageHealth => 0.2 ) // 20% to 39.999%
+		{
+			text = "Very Hungry";
+			color = stat_orange;
+		}
+		else if ( percentageHealth => 0.0 ) // 0% to 19.999%
+		{
+			text = "Starving";
+			color = stat_red;
+		}
+		
+		m_Notifiers.FindAnyWidget( "IconHungry" ).SetColor( color ); // Set vanilla icon color
+		HungerText.SetText( text ); // Set StatBar Text
+		HungerText.SetColor( color ); // Set StatBar Text Color
+		HungerBar.SetColor( color ); // Set StatBar Color
+		
+		// Thirst
+		if ( percentageHealth => 0.8 ) // 80% and higher
+		{
+			text = "Well Hydrated";
+			color = stat_white;
+		}
+		else if ( percentageHealth => 0.6 ) // 60% to 79.999%
+		{
+			text = "Hydrated";
+			color = stat_white;
+		}
+		else if ( percentageHealth => 0.4 ) // 40% to 59.999%
+		{
+			text = "Thirsty";
+			color = stat_yellow;
+		}
+		else if ( percentageHealth => 0.2 ) // 20% to 39.999%
+		{
+			text = "Very Thirsty";
+			color = stat_orange;
+		}
+		else if ( percentageHealth => 0.0 ) // 0% to 19.999%
+		{
+			text = "Dying of Thirst";
+			color = stat_red;
+		}
+		
+		m_Notifiers.FindAnyWidget( "IconThirsty" ).SetColor( color ); // Set vanilla icon color
+		ThirstText.SetText( text ); // Set StatBar Text
+		ThirstText.SetColor( color ); // Set StatBar Text Color
+		ThirstBar.SetColor( color ); // Set StatBar Color
 	}
 	
 	override void Update( float timeslice )

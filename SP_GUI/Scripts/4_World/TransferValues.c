@@ -15,8 +15,10 @@ modded class TransferValues
 	{
 		super.Init();
 		
+		// Max Values have been known to change on dayz devs' whims...
+		
 		m_LastHungerUpdate 	= 0;
-		m_HungerMaxValue 	= 7500; // Not sure why but this fixes an issue for now*/
+		m_HungerMaxValue 	= 7500; // m_Player.GetStatEnergy().GetMax() not correct...
 		m_HungerClient 		= 0;
 		
 		m_LastThirstUpdate 	= 0;
