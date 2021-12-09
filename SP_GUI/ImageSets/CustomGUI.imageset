@@ -1,0 +1,56 @@
+ImageSetClass {
+ Name "CustomGUI"
+ RefSize 128 128
+ Textures {
+  ImageSetTextureClass {
+   mpix 1
+   path "{F4B029C7FCBCCFC9}SP_GUI/ImageSets/Icons.edds"
+  }
+ }
+ Images {
+  ImageSetDefClass IconHungry {
+   Name "IconHungry"
+   Pos 10 10
+   Size 35 35
+   Flags 0
+  }
+  ImageSetDefClass IconHealth {
+   Name "IconHealth"
+   Pos 59 12
+   Size 35 35
+   Flags 0
+  }
+  ImageSetDefClass IconThirsty {
+   Name "IconThirsty"
+   Pos 9 51
+   Size 35 35
+   Flags 0
+  }
+  ImageSetDefClass IconTiredness {
+   Name "IconTiredness"
+   Pos 57 53
+   Size 35 35
+   Flags 0
+  }
+  ImageSetDefClass IconBlood {
+   Name "IconBlood"
+   Pos 9 90
+   Size 35 35
+   Flags 0
+  }
+  ImageSetDefClass StatPlus {
+   Name "StatPlus"
+   Pos 106 13
+   Size 13 13
+   Flags 0
+  }
+  ImageSetDefClass StatMinus {
+   Name "StatMinus"
+   Pos 106 30
+   Size 13 13
+   Flags 0
+  }
+ }
+ Groups {
+ }
+}

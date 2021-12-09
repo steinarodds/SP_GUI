@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{E8AA342572E36C6C}SP_GUI/ImageSets/ServerLogo.edds"
+ Author "mrt-pc"
+ ChangeDate -1975309528
+ Configurations {
+  PNGResourceClass PC {
+   SourceFile "ServerLogo.png"
+  }
+  PNGResourceClass XBOX_ONE : PC {
+  }
+  PNGResourceClass PS4 : PC {
+  }
+  PNGResourceClass LINUX : PC {
+  }
+ }
+}

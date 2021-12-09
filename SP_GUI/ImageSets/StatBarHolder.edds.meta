@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{FA09DB921E3BAAD0}SP_GUI/ImageSets/StatBarHolder.png"
+ Author "mrt-pc"
+ ChangeDate -2021397726
+ Configurations {
+  PNGResourceClass PC {
+   SourceFile "StatBarHolder.png"
+  }
+  PNGResourceClass XBOX_ONE : PC {
+  }
+  PNGResourceClass PS4 : PC {
+  }
+  PNGResourceClass LINUX : PC {
+  }
+ }
+}

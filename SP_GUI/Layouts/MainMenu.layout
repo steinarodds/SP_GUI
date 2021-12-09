@@ -1,0 +1,559 @@
+FrameWidgetClass main_menu_root {
+ visible 1
+ ignorepointer 1
+ position 0 0
+ size 1 1
+ halign center_ref
+ valign center_ref
+ hexactpos 1
+ vexactpos 1
+ hexactsize 0
+ vexactsize 0
+ priority 951
+ {
+  ImageWidgetClass Background {
+   ignorepointer 1
+   position 0 0
+   size 1 1
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   imageTexture "{DD0895112CCC3858}BorcioModMenu/Images/MenuBackground.edds"
+   stretch 0
+  }
+  ImageWidgetClass dayz_logo {
+   visible 1
+   ignorepointer 1
+   position 130 100
+   size 400 400
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   priority 2
+   image0 ""
+   imageTexture "{E8AA342572E36C6C}SP_GUI/ImageSets/ServerLogo.edds"
+   mode additive
+   "src alpha" 1
+   "no wrap" 0
+   stretch 1
+  }
+  FrameWidgetClass settings_panel_root {
+   ignorepointer 1
+   position 80.26649 613.99805
+   size 504.11203 392.00601
+   halign right_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   priority 3
+   {
+    ButtonWidgetClass settings_button {
+     color 1 1 1 0
+     position 0.07076 34.4468
+     size 64 64
+     halign right_ref
+     valign center_ref
+     hexactpos 0
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     fixaspect inside
+     style Empty
+     "no focus" 0
+     "next left" "news_main"
+     "next right" "exit_button"
+     "next up" "play"
+     "next down" "customize_character"
+     font "gui/fonts/sdf_MetronLight24"
+     switch normal
+     {
+      ImageWidgetClass settings_button_image {
+       ignorepointer 1
+       position 0 0
+       size 1 1
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       image0 ""
+       imageTexture "{B1A62ABE94D99EAB}BorcioModMenu/gui/icons/hud/toothwheels_64x64.edds"
+       mode blend
+       "src alpha" 1
+       stretch 1
+      }
+     }
+    }
+    ButtonWidgetClass exit_button {
+     color 1 1 1 0
+     position 0.07005 130.832
+     size 64 64
+     halign right_ref
+     valign center_ref
+     hexactpos 0
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     fixaspect inside
+     style Empty
+     "no focus" 0
+     "next left" "settings_button"
+     "next right" "play"
+     "next up" "play"
+     "next down" "customize_character"
+     font "gui/fonts/sdf_MetronLight24"
+     switch normal
+     {
+      ImageWidgetClass exit_button_image {
+       ignorepointer 1
+       position 0 0
+       size 1 1
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       image0 ""
+       imageTexture "{D7A36253F324EE88}BorcioModMenu/gui/icons/hud/switch_64x64.edds"
+       mode blend
+       "src alpha" 1
+       stretch 1
+      }
+     }
+    }
+   }
+  }
+  WrapSpacerWidgetClass Licensing {
+   clipchildren 0
+   position 12.5656 -7.36632
+   size 0.45 30
+   valign bottom_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 1
+   priority 5
+   Padding 8
+   Margin 0
+   "Size To Content H" 1
+   "Size To Content V" 1
+   content_valign center
+   {
+    TextWidgetClass version {
+     visible 1
+     clipchildren 0
+     ignorepointer 1
+     position 80 60
+     size 1 0.5
+     valign bottom_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     priority 2
+     text "#main_menu_version"
+     font "gui/fonts/sdf_MetronLight24"
+     "exact text" 0
+     "text valign" center
+    }
+   }
+  }
+  ImageWidgetClass vignette {
+   visible 1
+   ignorepointer 0
+   color 0 0 0 0.7843
+   position 0 -1.61
+   size 1 1
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   priority 1
+   imageTexture "{E6B3EF816E067499}Gui/textures/inventory_bgvignette.edds"
+   mode blend
+   "src alpha" 1
+   "no wrap" 1
+   stretch 1
+   filter 0
+   nocache 1
+  }
+  PanelWidgetClass NewsFeedPanel {
+   visible 0
+   ignorepointer 0
+   position 100 539.52704
+   size 550 430.91699
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   priority 4
+  }
+  GridSpacerWidgetClass character_stats_root {
+   visible 1
+   ignorepointer 1
+   position 693.86597 -264.45297
+   size 461.56 267.76602
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   scaled 1
+   priority 3
+   Padding 0
+   Margin 0
+   "Size To Content V" 1
+   Columns 1
+   Rows 2
+   {
+    ImageWidgetClass ImageWidget1 {
+     visible 1
+     ignorepointer 1
+     color 1 1 1 0
+     position 10 10
+     size 1.1308 1.22722
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     imageTexture ""
+     mode blend
+     "src alpha" 1
+     {
+      GridSpacerWidgetClass character_stats_content {
+       ignorepointer 1
+       color 0 0 0 0
+       position 18.432 68.768
+       size 0.90349 241.564
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 1
+       scaled 1
+       style DayZDefaultPanelSides
+       Padding 4
+       Margin 6
+       Columns 1
+       Rows 5
+       {
+        FrameWidgetClass TimeSurvived {
+         ignorepointer 1
+         position 0 0
+         size 48 24
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         {
+          TextWidgetClass TimeSurvivedLabel {
+           ignorepointer 1
+           position 0 0
+           size 0.5 1
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 0
+           vexactsize 0
+           text "#main_menu_time"
+           text_proportion 0.6
+           "size to text h" 0
+           "size to text v" 0
+           "text halign" right
+           "text valign" center
+          }
+          TextWidgetClass TimeSurvivedValue {
+           ignorepointer 1
+           position 0 0
+           size 0.5 1
+           halign right_ref
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 0
+           vexactsize 0
+           "text offset" -10 0
+           "size to text h" 0
+           "size to text v" 0
+           "text valign" center
+          }
+         }
+        }
+        FrameWidgetClass PlayersKilled {
+         ignorepointer 1
+         position 0 0
+         size 48 24
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         {
+          TextWidgetClass PlayersKilledLabel {
+           ignorepointer 1
+           size 0.5 1
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 0
+           vexactsize 0
+           text "#main_menu_players_killed"
+           text_proportion 0.6
+           "size to text h" 0
+           "size to text v" 0
+           "text halign" right
+           "text valign" center
+          }
+          TextWidgetClass PlayersKilledValue {
+           ignorepointer 1
+           position 0 0
+           size 0.5 1
+           halign right_ref
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 0
+           vexactsize 0
+           "text offset" -10 0
+           "size to text h" 0
+           "size to text v" 0
+           "text valign" center
+          }
+         }
+        }
+        FrameWidgetClass InfectedKilled {
+         ignorepointer 1
+         position 0 0
+         size 48 24
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         {
+          TextWidgetClass InfectedKilledLabel {
+           ignorepointer 1
+           size 0.5 1
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 0
+           vexactsize 0
+           text "#main_menu_infected_killed"
+           text_proportion 0.6
+           "size to text h" 0
+           "size to text v" 0
+           "text halign" right
+           "text valign" center
+          }
+          TextWidgetClass InfectedKilledValue {
+           ignorepointer 1
+           position 0 0
+           size 0.5 1
+           halign right_ref
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 0
+           vexactsize 0
+           "text offset" -10 0
+           "size to text h" 0
+           "size to text v" 0
+           "text valign" center
+          }
+         }
+        }
+        FrameWidgetClass DistanceTraveled {
+         ignorepointer 1
+         position 0 0
+         size 48 24
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         {
+          TextWidgetClass DistanceTraveledLabel {
+           ignorepointer 1
+           size 0.5 1
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 0
+           vexactsize 0
+           text "Distance traveled"
+           text_proportion 0.6
+           "size to text h" 0
+           "size to text v" 0
+           "text halign" right
+           "text valign" center
+          }
+          TextWidgetClass DistanceTraveledValue {
+           ignorepointer 1
+           position 0 0
+           size 0.5 1
+           halign right_ref
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 0
+           vexactsize 0
+           "text offset" -10 0
+           "size to text h" 0
+           "size to text v" 0
+           "text valign" center
+          }
+         }
+        }
+        FrameWidgetClass LongRangeShot {
+         ignorepointer 1
+         position 0 0
+         size 48 24
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         {
+          TextWidgetClass LongRangeShotLabel {
+           ignorepointer 1
+           size 0.5 1
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 0
+           vexactsize 0
+           text "Longest player hit"
+           text_proportion 0.6
+           "size to text h" 0
+           "size to text v" 0
+           "text halign" right
+           "text valign" center
+          }
+          TextWidgetClass LongRangeShotValue {
+           ignorepointer 1
+           position 0 0
+           size 0.5 1
+           halign right_ref
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 0
+           vexactsize 0
+           "text offset" -10 0
+           "size to text h" 0
+           "size to text v" 0
+           "text valign" center
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+  WrapSpacerWidgetClass top {
+   visible 0
+   ignorepointer 1
+   color 0 0 0 0.549
+   position 0 0
+   size 1 48
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 1
+   style DayZDefaultPanelSides
+   "no focus" 1
+   Padding 0
+   Margin 0
+   "Size To Content V" 1
+   {
+    PanelWidgetClass character {
+     visible 1
+     ignorepointer 0
+     position 0 0
+     size 1 38
+     halign center_ref
+     valign bottom_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     style blank
+     {
+      TextWidgetClass character_name_text {
+       clipchildren 1
+       inheritalpha 1
+       ignorepointer 1
+       size 1 0.55
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       font "gui/fonts/sdf_MetronLight24"
+       "exact text" 0
+       "text halign" center
+       "text valign" center
+      }
+     }
+    }
+   }
+  }
+  ButtonWidgetClass play {
+   color 0 0 0 0.3373
+   position 200 200
+   size 261.08798 111.504
+   valign bottom_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   scaled 1
+   fixaspect fixwidth
+   priority 3
+   style Default
+   "no focus" 0
+   "next left" "news_main"
+   "next right" "news_main"
+   "next up" "choose_server"
+   "next down" "play_video"
+   {
+    PanelWidgetClass play_panel {
+     ignorepointer 1
+     color 0 0 0 0
+     position 0 0
+     size 1 1
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     style blank
+     {
+      ImageWidgetClass play_label {
+       ignorepointer 1
+       position 0.38 1.99
+       size 260 112
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       fixaspect fixwidth
+       imageTexture "{6EB46B94B11278C9}BorcioModMenu/Images/PLAY.edds"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 1
+       filter 1
+      }
+     }
+    }
+   }
+  }
+ }
+}

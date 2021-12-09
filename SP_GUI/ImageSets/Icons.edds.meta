@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{F4B029C7FCBCCFC9}SP_GUI/ImageSets/Icons.png"
+ Author "mrt-pc"
+ ChangeDate 946154274
+ Configurations {
+  PNGResourceClass PC {
+   SourceFile "Icons.png"
+  }
+  PNGResourceClass XBOX_ONE : PC {
+  }
+  PNGResourceClass PS4 : PC {
+  }
+  PNGResourceClass LINUX : PC {
+  }
+ }
+}

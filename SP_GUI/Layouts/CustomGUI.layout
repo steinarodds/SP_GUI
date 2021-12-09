@@ -1,0 +1,1554 @@
+FrameWidgetClass rootFrame {
+ clipchildren 0
+ position 0 0
+ size 1 1
+ hexactsize 0
+ vexactsize 0
+ {
+  WrapSpacerWidgetClass BadgesPanel {
+   visible 1
+   clipchildren 0
+   ignorepointer 1
+   position 35.09 248.114
+   size 69.8148 335.314
+   halign right_ref
+   valign bottom_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   fixaspect fixwidth
+   priority 100
+   scriptclass ""
+   Padding 6
+   Margin 0
+   content_halign center
+   content_valign bottom
+   {
+    ImageWidgetClass Wetness {
+     visible 1
+     color 0.8627 0.8627 0.8627 1
+     position 0.2 0
+     size 35 35
+     halign right_ref
+     valign bottom_ref
+     hexactpos 0
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     fixaspect fixwidth
+     image0 "set:dayz_gui image:iconDrops"
+     mode blend
+     "src alpha" 1
+     "no wrap" 1
+     stretch 0
+     filter 1
+     nocache 0
+    }
+    ImageWidgetClass Fracture {
+     visible 1
+     clipchildren 1
+     color 0.8627 0.8627 0.8627 1
+     position 0.8 0
+     size 35 35
+     halign right_ref
+     valign bottom_ref
+     hexactpos 0
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     fixaspect fixwidth
+     image0 "set:dayz_gui image:iconBone"
+     mode blend
+     "src alpha" 1
+     "no wrap" 1
+     stretch 0
+     filter 1
+     nocache 0
+    }
+    ImageWidgetClass Stomach {
+     visible 1
+     color 0.8627 0.8627 0.8627 1
+     position 0 0
+     size 52 38
+     halign right_ref
+     valign bottom_ref
+     hexactpos 0
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     fixaspect fixwidth
+     image0 "set:dayz_gui image:iconStomach2"
+     mode blend
+     "src alpha" 1
+     "no wrap" 1
+     stretch 0
+     filter 1
+     nocache 0
+    }
+    ImageWidgetClass Sick {
+     visible 1
+     color 0.8627 0.8627 0.8627 1
+     position 0.4 0
+     size 35 35
+     halign right_ref
+     valign bottom_ref
+     hexactpos 0
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     fixaspect fixwidth
+     image0 "set:dayz_gui image:iconBacteria"
+     mode blend
+     "src alpha" 1
+     "no wrap" 1
+     stretch 0
+     filter 1
+     nocache 0
+    }
+    ImageWidgetClass Pills {
+     visible 1
+     clipchildren 1
+     color 0.8627 0.8627 0.8627 1
+     position 0.8 0
+     size 35 35
+     halign right_ref
+     valign bottom_ref
+     hexactpos 0
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     fixaspect fixwidth
+     image0 "set:dayz_gui image:iconPill"
+     mode blend
+     "src alpha" 1
+     "no wrap" 1
+     stretch 0
+     filter 1
+     nocache 0
+    }
+    ImageWidgetClass Poisoned {
+     visible 1
+     clipchildren 1
+     color 0.8627 0.8627 0.8627 1
+     position 0.8 0
+     size 35 35
+     halign right_ref
+     valign bottom_ref
+     hexactpos 0
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     fixaspect fixwidth
+     image0 "set:dayz_gui image:iconSkull"
+     mode blend
+     "src alpha" 1
+     "no wrap" 1
+     stretch 0
+     filter 1
+     nocache 0
+    }
+    ImageWidgetClass Bleeding {
+     visible 1
+     clipchildren 0
+     color 0.8627 0.8627 0.8627 1
+     position 0.8 0
+     size 35 35
+     halign right_ref
+     valign bottom_ref
+     hexactpos 0
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     fixaspect fixwidth
+     image0 "set:dayz_gui image:iconBleeding"
+     mode blend
+     "src alpha" 1
+     "no wrap" 1
+     stretch 0
+     filter 1
+     nocache 0
+     {
+      TextWidgetClass BleedingCount {
+       visible 1
+       color 0.8627 0.8627 0.8627 1
+       position -2 -2
+       size 17 15
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "10"
+       font "gui/fonts/sdf_MetronLight24"
+       "text halign" center
+      }
+     }
+    }
+    ImageWidgetClass Shock {
+     visible 1
+     clipchildren 1
+     color 0.8627 0.8627 0.8627 1
+     position 0.8 0
+     size 35 35
+     halign right_ref
+     valign bottom_ref
+     hexactpos 0
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     fixaspect fixwidth
+     image0 "set:dayz_gui image:iconShock"
+     mode blend
+     "src alpha" 1
+     "no wrap" 1
+     stretch 0
+     filter 1
+     nocache 0
+    }
+   }
+  }
+  FrameWidgetClass NotifiersPanel {
+   visible 1
+   clipchildren 1
+   position -0.00013 0.42124
+   size 683.87897 196.10001
+   halign right_ref
+   valign bottom_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   fixaspect fixwidth
+   priority 100
+   {
+    PanelWidgetClass Health {
+     clipchildren 1
+     inheritalpha 0
+     position 17.2078 75.5716
+     size 458.655 38.4791
+     halign right_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     fixaspect fixwidth
+     style blank
+     {
+      ImageWidgetClass IconHealth {
+       disabled 0
+       clipchildren 1
+       inheritalpha 0
+       ignorepointer 0
+       keepsafezone 0
+       color 0.8627 0.8627 0.8627 1
+       position -192.90999 -0.03143
+       size 35 35
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       fixaspect fixwidth
+       image0 "set:dayz_gui image:iconHealth0"
+       mode blend
+       "src alpha" 1
+       "no wrap" 0
+       stretch 0
+       "flip u" 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass HealthArrowUp3 {
+       visible 1
+       clipchildren 1
+       color 0.8627 0.8627 0.8627 1
+       position 79.8349 0.98256
+       size 20 20
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:CustomGUI image:StatPlus"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass HealthArrowUp2 {
+       visible 0
+       clipchildren 1
+       inheritalpha 0
+       color 0.8627 0.8627 0.8627 1
+       position 79.8349 0.98256
+       size 20 20
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:CustomGUI image:StatPlus"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass HealthArrowUp1 {
+       visible 0
+       clipchildren 1
+       inheritalpha 0
+       color 0.8627 0.8627 0.8627 1
+       position 79.8349 0.98256
+       size 20 20
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:CustomGUI image:StatPlus"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass HealthArrowDown1 {
+       visible 0
+       clipchildren 1
+       color 0.8627 0.8627 0.8627 1
+       position 79.8349 0.98256
+       size 20 20
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:CustomGUI image:StatMinus"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass HealthArrowDown2 {
+       visible 0
+       clipchildren 1
+       inheritalpha 0
+       color 0.8627 0.8627 0.8627 1
+       position 79.8349 0.98256
+       size 20 20
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:CustomGUI image:StatMinus"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass HealthArrowDown3 {
+       visible 1
+       clipchildren 1
+       inheritalpha 0
+       color 0.8627 0.8627 0.8627 1
+       position 79.8349 0.98256
+       size 20 20
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:CustomGUI image:StatMinus"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+     }
+    }
+    PanelWidgetClass Blood {
+     clipchildren 0
+     inheritalpha 0
+     position 17.797 41.6118
+     size 457.685 37.1397
+     halign right_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     fixaspect fixwidth
+     style blank
+     {
+      ImageWidgetClass IconBlood {
+       clipchildren 0
+       color 0.8627 0.8627 0.8627 1
+       position -192.797 -0.06917
+       size 35 35
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       fixaspect fixwidth
+       image0 "set:dayz_gui image:iconBlood0"
+       mode blend
+       "src alpha" 1
+       "no wrap" 0
+       stretch 0
+       "flip u" 0
+       "flip v" 0
+       filter 1
+       nocache 0
+       {
+        TextWidgetClass BloodType {
+         color 0.8627 0.8627 0.8627 1
+         position -4 -2
+         size 17 12
+         halign right_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         text "AB"
+         font "gui/fonts/sdf_MetronLight24"
+         "text halign" center
+        }
+        TextWidgetClass BloodPosType {
+         color 0.8627 0.8627 0.8627 1
+         position -4 8
+         size 17 12
+         halign right_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         text "+"
+         font "gui/fonts/sdf_MetronLight24"
+         "text halign" center
+        }
+       }
+      }
+      ImageWidgetClass BloodArrowUp3 {
+       visible 1
+       clipchildren 1
+       color 0.8627 0.8627 0.8627 1
+       position 79.45781 1.40385
+       size 20 20
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:CustomGUI image:StatPlus"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass BloodArrowUp2 {
+       visible 0
+       clipchildren 1
+       inheritalpha 0
+       color 0.8627 0.8627 0.8627 1
+       position 79.45781 1.40385
+       size 20 20
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:CustomGUI image:StatPlus"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass BloodArrowUp1 {
+       visible 0
+       clipchildren 1
+       inheritalpha 0
+       color 0.8627 0.8627 0.8627 1
+       position 79.45781 1.40385
+       size 20 20
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:CustomGUI image:StatPlus"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass BloodArrowDown1 {
+       visible 0
+       clipchildren 1
+       color 0.8627 0.8627 0.8627 1
+       position 79.45781 1.40385
+       size 20 20
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:CustomGUI image:StatMinus"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass BloodArrowDown2 {
+       visible 0
+       clipchildren 1
+       inheritalpha 0
+       color 0.8627 0.8627 0.8627 1
+       position 79.45781 1.40385
+       size 20 20
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:CustomGUI image:StatMinus"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass BloodArrowDown3 {
+       visible 1
+       clipchildren 1
+       inheritalpha 0
+       color 0.8627 0.8627 0.8627 1
+       position 79.45781 1.40385
+       size 20 20
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:CustomGUI image:StatMinus"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+     }
+    }
+    PanelWidgetClass Hungry {
+     clipchildren 1
+     inheritalpha 0
+     position 16.5033 5.67784
+     size 461.526 38.2779
+     halign right_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     fixaspect fixwidth
+     style blank
+     {
+      ImageWidgetClass IconHungry {
+       color 0.8627 0.8627 0.8627 1
+       position -192.34399 0.51564
+       size 35 35
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       fixaspect fixwidth
+       image0 "set:dayz_gui image:iconHungry0"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip u" 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass HungryArrowUp3 {
+       visible 1
+       clipchildren 0
+       color 0.8627 0.8627 0.8627 1
+       position 80.6402 6.06341
+       size 20 20
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:CustomGUI image:StatPlus"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass HungryArrowUp2 {
+       visible 0
+       clipchildren 1
+       inheritalpha 0
+       color 0.8627 0.8627 0.8627 1
+       position 80.6402 6.06341
+       size 20 20
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:CustomGUI image:StatPlus"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass HungryArrowUp1 {
+       visible 0
+       clipchildren 1
+       inheritalpha 0
+       color 0.8627 0.8627 0.8627 1
+       position 80.6402 6.06341
+       size 20 20
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:CustomGUI image:StatPlus"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass HungryArrowDown1 {
+       visible 0
+       clipchildren 1
+       color 0.8627 0.8627 0.8627 1
+       position 80.6402 6.06341
+       size 20 20
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:CustomGUI image:StatMinus"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass HungryArrowDown2 {
+       visible 0
+       clipchildren 1
+       inheritalpha 0
+       color 0.8627 0.8627 0.8627 1
+       position 80.6402 6.06341
+       size 20 20
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:CustomGUI image:StatMinus"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass HungryArrowDown3 {
+       visible 1
+       clipchildren 1
+       inheritalpha 0
+       color 0.8627 0.8627 0.8627 1
+       position 80.6402 6.06341
+       size 20 20
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:CustomGUI image:StatMinus"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+     }
+    }
+    PanelWidgetClass Thirsty {
+     clipchildren 1
+     inheritalpha 0
+     position 14.9977 -29.1825
+     size 460.36298 38.869
+     halign right_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     fixaspect fixwidth
+     style blank
+     {
+      ImageWidgetClass IconThirsty {
+       color 0.8627 0.8627 0.8627 1
+       position -195.036 -0.03144
+       size 35 35
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       fixaspect fixwidth
+       image0 "set:dayz_gui image:iconThirsty0"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip u" 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass ThirstyArrowUp3 {
+       visible 1
+       clipchildren 1
+       color 0.8627 0.8627 0.8627 1
+       position 78.2509 5.05101
+       size 20 20
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:CustomGUI image:StatPlus"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass ThirstyArrowUp2 {
+       visible 0
+       clipchildren 1
+       inheritalpha 0
+       color 0.8627 0.8627 0.8627 1
+       position 78.2509 5.05101
+       size 20 20
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:CustomGUI image:StatPlus"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass ThirstyArrowUp1 {
+       visible 0
+       clipchildren 1
+       inheritalpha 0
+       color 0.8627 0.8627 0.8627 1
+       position 78.2509 5.05101
+       size 20 20
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:CustomGUI image:StatPlus"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass ThirstyArrowDown1 {
+       visible 0
+       clipchildren 1
+       color 0.8627 0.8627 0.8627 1
+       position 78.2509 5.05101
+       size 20 20
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:CustomGUI image:StatMinus"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass ThirstyArrowDown2 {
+       visible 0
+       clipchildren 1
+       inheritalpha 0
+       color 0.8627 0.8627 0.8627 1
+       position 78.2509 5.05101
+       size 20 20
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:CustomGUI image:StatMinus"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass ThirstyArrowDown3 {
+       visible 1
+       clipchildren 1
+       inheritalpha 0
+       color 0.8627 0.8627 0.8627 1
+       position 78.2509 5.05101
+       size 20 20
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:CustomGUI image:StatMinus"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+     }
+    }
+    PanelWidgetClass Bacteria {
+     visible 0
+     clipchildren 1
+     inheritalpha 0
+     position 225 0
+     size 35 81
+     halign right_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     fixaspect fixwidth
+     style blank
+     {
+      ImageWidgetClass IconBacteria {
+       color 0.8627 0.8627 0.8627 1
+       position 0 0
+       size 35 35
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       fixaspect fixwidth
+       image0 "set:dayz_gui image:iconBacteria"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip u" 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass BacteriaArrowUp3 {
+       visible 1
+       clipchildren 1
+       color 0.8627 0.8627 0.8627 1
+       position 0 -27
+       size 22 17
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:CustomGUI image:StatPlus"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass BacteriaArrowUp2 {
+       visible 0
+       clipchildren 1
+       inheritalpha 0
+       color 0.8627 0.8627 0.8627 1
+       position 0 -25
+       size 22 12
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:CustomGUI image:StatPlus"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass BacteriaArrowUp1 {
+       visible 0
+       clipchildren 1
+       inheritalpha 0
+       color 0.8627 0.8627 0.8627 1
+       position 0 -22
+       size 22 7
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:CustomGUI image:StatPlus"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass BacteriaArrowDown1 {
+       visible 0
+       clipchildren 1
+       color 0.8627 0.8627 0.8627 1
+       position 0 22
+       size 22 7
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:CustomGUI image:StatMinus"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass BacteriaArrowDown2 {
+       visible 0
+       clipchildren 1
+       inheritalpha 0
+       color 0.8627 0.8627 0.8627 1
+       position 0 25
+       size 22 12
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:CustomGUI image:StatMinus"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass BacteriaArrowDown3 {
+       visible 1
+       clipchildren 1
+       inheritalpha 0
+       color 0.8627 0.8627 0.8627 1
+       position 0 27
+       size 22 17
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:CustomGUI image:StatMinus"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+     }
+    }
+    PanelWidgetClass Temperature {
+     clipchildren 0
+     inheritalpha 0
+     position 15.6439 -67.16439
+     size 461.332 38.2402
+     halign right_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     fixaspect fixwidth
+     style blank
+     {
+      ImageWidgetClass IconTemperature {
+       clipchildren 0
+       color 0.8627 0.8627 0.8627 1
+       position 176.37801 -1.72297
+       size 35 35
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       fixaspect fixwidth
+       image0 "set:dayz_gui image:iconTemperature0"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip u" 0
+       "flip v" 0
+       filter 1
+       nocache 0
+       {
+        TextWidgetClass TemperatureValueTop {
+         visible 0
+         color 0.8627 0.8627 0.8627 1
+         position 0 -12
+         size 40 12
+         halign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         font "gui/fonts/sdf_MetronLight24"
+         "size to text h" 1
+         "text halign" center
+        }
+        TextWidgetClass TemperatureValueBottom {
+         visible 0
+         color 0.8627 0.8627 0.8627 1
+         position 0 -12
+         size 40 12
+         halign center_ref
+         valign bottom_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         font "gui/fonts/sdf_MetronLight24"
+         "size to text h" 1
+         "text halign" center
+        }
+        ImageWidgetClass HeatBuffer {
+         visible 1
+         color 0.8627 0.8627 0.8627 1
+         position -2.7406 -2.01861
+         size 13 13
+         halign right_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         image0 "set:dayz_gui image:iconHeatBuffer"
+         mode blend
+         "src alpha" 1
+         "no wrap" 1
+        }
+       }
+      }
+      ImageWidgetClass TemperatureArrowUp3 {
+       visible 1
+       clipchildren 1
+       color 0.8627 0.8627 0.8627 1
+       position 207.88101 0.03301
+       size 20 20
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:CustomGUI image:StatPlus"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass TemperatureArrowUp2 {
+       visible 0
+       clipchildren 1
+       inheritalpha 0
+       color 0.8627 0.8627 0.8627 1
+       position 207.88101 0.03301
+       size 20 20
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:CustomGUI image:StatPlus"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass TemperatureArrowUp1 {
+       visible 0
+       clipchildren 1
+       inheritalpha 0
+       color 0.8627 0.8627 0.8627 1
+       position 207.88101 0.03301
+       size 20 20
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:CustomGUI image:StatPlus"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass TemperatureArrowDown1 {
+       visible 0
+       clipchildren 1
+       color 0.8627 0.8627 0.8627 1
+       position 207.88101 0.03301
+       size 20 20
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:CustomGUI image:StatMinus"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass TemperatureArrowDown2 {
+       visible 0
+       clipchildren 1
+       inheritalpha 0
+       color 0.8627 0.8627 0.8627 1
+       position 207.88101 0.03301
+       size 20 20
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:CustomGUI image:StatMinus"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+      ImageWidgetClass TemperatureArrowDown3 {
+       visible 1
+       clipchildren 1
+       inheritalpha 0
+       color 0.8627 0.8627 0.8627 1
+       position 207.88101 0.03301
+       size 20 20
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 999
+       image0 "set:CustomGUI image:StatMinus"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 0
+       "flip v" 0
+       filter 1
+       nocache 0
+      }
+     }
+    }
+   }
+  }
+  FrameWidgetClass NotifiersBars {
+   clipchildren 0
+   position 0.77063 0.85721
+   size 0.22938 0.1428
+   hexactsize 0
+   vexactsize 0
+   {
+    ProgressBarWidgetClass HealthBar {
+     visible 1
+     position 186.18701 20.0063
+     size 0.48222 8.6494
+     halign right_ref
+     valign bottom_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     priority 1
+     style Quantity
+     current 100
+     vertical 0
+     flipped 0
+    }
+    ProgressBarWidgetClass BloodBar {
+     visible 1
+     position 186.49699 51.2343
+     size 0.48222 8.6494
+     halign right_ref
+     valign bottom_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     priority 1
+     style Quantity
+     maximum 5000
+     current 5000
+     vertical 0
+     flipped 0
+    }
+    ProgressBarWidgetClass HungerBar {
+     visible 1
+     position 186.037 84.1127
+     size 0.48222 8.6494
+     halign right_ref
+     valign bottom_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     priority 1
+     style Quantity
+     maximum 20000
+     current 20000
+     vertical 0
+     flipped 0
+    }
+    ProgressBarWidgetClass ThirstBar {
+     visible 1
+     position 186.638 119.539
+     size 0.48218 8.6494
+     halign right_ref
+     valign bottom_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     priority 1
+     style Quantity
+     maximum 5000
+     current 5000
+     vertical 0
+     flipped 0
+    }
+    ImageWidgetClass HealthBarHolder {
+     visible 1
+     position 152.082 15.2393
+     size 0.60604 11.6175
+     halign right_ref
+     valign bottom_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     priority 1
+     imageTexture "{FA09DB921E3BAAD0}SP_GUI/ImageSets/StatBarHolder.edds"
+     mode additive
+     stretch 1
+    }
+    ImageWidgetClass BloodBarHolder {
+     visible 1
+     position 152.082 47.2023
+     size 0.60604 11.6175
+     halign right_ref
+     valign bottom_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     priority 1
+     imageTexture "{FA09DB921E3BAAD0}SP_GUI/ImageSets/StatBarHolder.edds"
+     mode additive
+     stretch 1
+    }
+    ImageWidgetClass HungerBarHolder {
+     visible 1
+     position 152.082 79.98911
+     size 0.60604 11.6175
+     halign right_ref
+     valign bottom_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     priority 1
+     imageTexture "{FA09DB921E3BAAD0}SP_GUI/ImageSets/StatBarHolder.edds"
+     mode additive
+     stretch 1
+    }
+    ImageWidgetClass ThirstBarHolder {
+     visible 1
+     position 152.082 115.31001
+     size 0.60604 11.6175
+     halign right_ref
+     valign bottom_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     priority 1
+     imageTexture "{FA09DB921E3BAAD0}SP_GUI/ImageSets/StatBarHolder.edds"
+     mode additive
+     stretch 1
+    }
+   }
+  }
+  FrameWidgetClass NotifiersText {
+   clipchildren 0
+   position 0.92045 0.85721
+   size 0.07956 0.1428
+   hexactsize 0
+   vexactsize 0
+   {
+    TextWidgetClass HealthText {
+     visible 1
+     clipchildren 0
+     position 39.2679 14.0452
+     size 0.76058 15.2456
+     halign right_ref
+     valign bottom_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     priority 1
+     style Normal
+     text "Health"
+     "exact text" 0
+     "size to text h" 0
+    }
+    TextWidgetClass BloodText {
+     visible 1
+     clipchildren 0
+     position 39.3528 46.5512
+     size 0.76058 15.2456
+     halign right_ref
+     valign bottom_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     priority 1
+     style Normal
+     text "Blood"
+    }
+    TextWidgetClass HungerText {
+     visible 1
+     clipchildren 0
+     position 38.6287 79.1487
+     size 0.76058 15.2456
+     halign right_ref
+     valign bottom_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     priority 1
+     style Normal
+     text "Energy"
+    }
+    TextWidgetClass ThirstText {
+     visible 1
+     clipchildren 0
+     position 36.3576 113.01701
+     size 0.76058 15.2456
+     halign right_ref
+     valign bottom_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     priority 1
+     style Normal
+     text "Hydration"
+    }
+   }
+  }
+ }
+}
