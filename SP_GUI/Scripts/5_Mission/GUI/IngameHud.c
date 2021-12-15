@@ -171,27 +171,27 @@ modded class IngameHud
 		string text, color;
 		
 		// Health
-		if ( percentageHealth => 0.8 ) // 80% and higher
+		if ( percentageHealth >= 0.8 ) // 80% and higher
 		{
 			text = "Very Healthy";
 			color = stat_white;
 		}
-		else if ( percentageHealth => 0.6 ) // 60% to 79.999%
+		else if ( percentageHealth >= 0.6 ) // 60% to 79.999%
 		{
 			text = "Healthy";
 			color = stat_white;
 		}
-		else if ( percentageHealth => 0.4 ) // 40% to 59.999%
+		else if ( percentageHealth >= 0.4 ) // 40% to 59.999%
 		{
 			text = "Somewhat Healthy";
 			color = stat_yellow;
 		}
-		else if ( percentageHealth => 0.2 ) // 20% to 39.999%
+		else if ( percentageHealth >= 0.2 ) // 20% to 39.999%
 		{
 			text = "Unhealthy";
 			color = stat_orange;
 		}
-		else if ( percentageHealth => 0.0 ) // 0% to 19.999%
+		else if ( percentageHealth >= 0.0 ) // 0% to 19.999%
 		{
 			text = "Very Unhealthy";
 			color = stat_red;
@@ -203,27 +203,27 @@ modded class IngameHud
 		HealthBar.SetColor( color ); // Set StatBar Color
 		
 		// Blood
-		if ( percentageHealth => 0.8 ) // 80% and higher
+		if ( percentageHealth >= 0.8 ) // 80% and higher
 		{
 			text = "Full Blood";
 			color = stat_white;
 		}
-		else if ( percentageHealth => 0.6 ) // 60% to 79.999%
+		else if ( percentageHealth >= 0.6 ) // 60% to 79.999%
 		{
 			text = "High Blood";
 			color = stat_white;
 		}
-		else if ( percentageHealth => 0.4 ) // 40% to 59.999%
+		else if ( percentageHealth >= 0.4 ) // 40% to 59.999%
 		{
 			text = "Lost Blood";
 			color = stat_yellow;
 		}
-		else if ( percentageHealth => 0.2 ) // 20% to 39.999%
+		else if ( percentageHealth >= 0.2 ) // 20% to 39.999%
 		{
 			text = "Low Blood";
 			color = stat_orange;
 		}
-		else if ( percentageHealth => 0.0 ) // 0% to 19.999%
+		else if ( percentageHealth >= 0.0 ) // 0% to 19.999%
 		{
 			text = "Very Low Blood";
 			color = stat_red;
@@ -235,27 +235,27 @@ modded class IngameHud
 		BloodBar.SetColor( color ); // Set StatBar Color
 		
 		// Hunger
-		if ( percentageHealth => 0.8 ) // 80% and higher
+		if ( percentageHealth >= 0.8 ) // 80% and higher
 		{
 			text = "Very Well Fed";
 			color = stat_white;
 		}
-		else if ( percentageHealth => 0.6 ) // 60% to 79.999%
+		else if ( percentageHealth >= 0.6 ) // 60% to 79.999%
 		{
 			text = "Well Fed";
 			color = stat_white;
 		}
-		else if ( percentageHealth => 0.4 ) // 40% to 59.999%
+		else if ( percentageHealth >= 0.4 ) // 40% to 59.999%
 		{
 			text = "Hungry";
 			color = stat_yellow;
 		}
-		else if ( percentageHealth => 0.2 ) // 20% to 39.999%
+		else if ( percentageHealth >= 0.2 ) // 20% to 39.999%
 		{
 			text = "Very Hungry";
 			color = stat_orange;
 		}
-		else if ( percentageHealth => 0.0 ) // 0% to 19.999%
+		else if ( percentageHealth >= 0.0 ) // 0% to 19.999%
 		{
 			text = "Starving";
 			color = stat_red;
@@ -267,27 +267,27 @@ modded class IngameHud
 		HungerBar.SetColor( color ); // Set StatBar Color
 		
 		// Thirst
-		if ( percentageHealth => 0.8 ) // 80% and higher
+		if ( percentageHealth >= 0.8 ) // 80% and higher
 		{
 			text = "Well Hydrated";
 			color = stat_white;
 		}
-		else if ( percentageHealth => 0.6 ) // 60% to 79.999%
+		else if ( percentageHealth >= 0.6 ) // 60% to 79.999%
 		{
 			text = "Hydrated";
 			color = stat_white;
 		}
-		else if ( percentageHealth => 0.4 ) // 40% to 59.999%
+		else if ( percentageHealth >= 0.4 ) // 40% to 59.999%
 		{
 			text = "Thirsty";
 			color = stat_yellow;
 		}
-		else if ( percentageHealth => 0.2 ) // 20% to 39.999%
+		else if ( percentageHealth >= 0.2 ) // 20% to 39.999%
 		{
 			text = "Very Thirsty";
 			color = stat_orange;
 		}
-		else if ( percentageHealth => 0.0 ) // 0% to 19.999%
+		else if ( percentageHealth >= 0.0 ) // 0% to 19.999%
 		{
 			text = "Dying of Thirst";
 			color = stat_red;
